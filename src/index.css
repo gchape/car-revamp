@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+@font-face {
+  font-family: "Sylfaen";
+  src: url("./assets/fonts/sylfaen.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arial GEO";
+  src: url("./assets/fonts/arial_geo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BPG Glaho";
+  src: url("./assets/fonts/bpg_glaho.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "tailwindcss";
+@theme {
+  --font-glaho: "BPG Glaho", sans-serif;
+  --font-arial-geo: "Arial GEO", sans-serif;
+
+  --font-nunito: "Nunito", sans-serif;
+  --font-dancing-script: "Dancing Script", cursive;
+}
+
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@utility btn {
+  @apply bg-[#1e1c1a] hover:bg-[#333333] text-[#bebebe] border-0 shadow-none;
+}
+
+body {
+  color: #bebebe;
+  background-color: black;
+  font-family: "Sylfaen", sans-serif;
+
+  width: 100vw;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+
+  overflow: hidden;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.hero-video {
+  top: 0;
+  left: 0;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+  object-fit: cover;
+}
+
+.logo {
+  width: 150px;
+  height: 100px;
+
+  background-image: url(assets/image/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
