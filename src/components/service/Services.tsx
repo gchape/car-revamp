@@ -1,0 +1,14 @@
+import { services } from "../../ts/data";
+import Service from "./Service";
+
+function Services() {
+  return (
+    <div className="grid grow-1 grid-cols-1 md:grid-cols-2 place-items-center lg:grid-cols-3 gap-4 px-2">
+      {services.map((service, index) => (
+        <Service key={index} {...service} />
+      ))}
+    </div>
+  );
+}
+
+export default Services;
