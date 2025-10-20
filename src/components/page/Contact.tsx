@@ -1,5 +1,6 @@
 import {
   faCalendarDays,
+  faEnvelope,
   faLocationDot,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
@@ -40,6 +41,10 @@ const Contact = () => {
 
           <a href="tel:+995500504169">
             <FontAwesomeIcon icon={faPhone} size="lg" /> (+995) 500-50-41-69
+          </a>
+
+          <a href="mailto:car.r3vamp@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} size="lg" /> car.r3vamp@gmail.com
           </a>
 
           <span>
