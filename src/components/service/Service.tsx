@@ -1,6 +1,6 @@
 function Service({ title, src, description }: {} & Service) {
   return (
-    <div className="card from-[#010101] to-[#1e1c1a] bg-linear-to-br w-96 shadow-sm">
+    <div className="card from-[#010101] to-[#1e1c1a] bg-linear-to-br w-max-96 shadow-sm">
       <figure>
         <img src={src} alt={title} />
       </figure>
