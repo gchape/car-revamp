@@ -48,7 +48,7 @@ function About() {
         </section>
       </div>
 
-      <div className="flex flex-col w-full lg:w-1/2 mb-10 items-end gap-y-8 justify-center">
+      <div className="flex flex-col w-full lg:w-1/2 mb-5 items-end gap-y-8 justify-center">
         <div className="self-baseline-last">
           <Rating />
         </div>

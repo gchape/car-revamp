@@ -1,10 +1,16 @@
+import {
+  faCalendarDays,
+  faLocationDot,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   return (
-    <div className="flex flex-col grow-1 md:flex-row justify-center items-center gap-12 lg:gap-24 px-1.5 py-12 pb-5">
+    <div className="flex grow-1 flex-col md:flex-row justify-center items-center gap-8 md:gap-16 px-2.5 py-5">
       {isLoading && (
         <div className="skeleton w-full md:w-1/2 h-130 rounded-xl shadow-lg overflow-hidden relative bg-black" />
       )}
@@ -19,20 +25,28 @@ const Contact = () => {
         }&q=ALEKO+MOTORS,42.2351271,42.6917871`}
       />
 
-      <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-6 md:space-y-8 text-stone-300 font-arial-geo tracking-wider">
-        <h2 className="text-3xl font-semibold text-yellow-400">საკონტაქტო</h2>
-        <p className="text-lg md:text-xl font-medium font-nunito">
-          <span className="font-bold font-arial-geo">მისამართი:</span> 21 G
-          Nikea St, Kutaisi
-        </p>
-        <p className="text-lg md:text-xl font-medium font-nunito">
-          <span className="font-bold font-arial-geo">ტელეფონი:</span> +995
-          500-50-41-69
-        </p>
-        <p className="text-lg md:text-xl font-medium">
-          <span className="font-bold">სამუშაო საათები:</span> ორშ. - კვ. 10:00 -
-          18:00
-        </p>
+      <div className="flex flex-col justify-center items-center text-stone-300 w-full md:w-1/2 mt-4 md:m-0">
+        <section className="mb-6 md:mb-12">
+          <h2 className="text-yellow-400 text-2xl md:text-4xl tracking-widest md:tracking-wider font-bold font-arial-geo">
+            საკონტაქტო ინფორმაცია
+          </h2>
+        </section>
+
+        <section className="flex flex-col justify-evenly items-start text-zinc-300 text-lg md:text-xl gap-6 md:gap-8">
+          <span>
+            <FontAwesomeIcon icon={faLocationDot} size="lg" /> 21 G Nikea St,
+            Kutaisi
+          </span>
+
+          <a href="tel:+995500504169">
+            <FontAwesomeIcon icon={faPhone} size="lg" /> (+995) 500-50-41-69
+          </a>
+
+          <span>
+            <FontAwesomeIcon icon={faCalendarDays} size="lg" /> ორშაბათი -
+            კვირა, 10:00 - 18:00
+          </span>
+        </section>
       </div>
     </div>
   );
