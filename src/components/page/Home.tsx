@@ -20,7 +20,7 @@ function Home() {
 
       <Outlet />
 
-      <Footer />
+      {location.pathname === "/contact" && <Footer />}
     </div>
   );
 }
