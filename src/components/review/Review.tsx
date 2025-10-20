@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 import React from "react";
-import Customer1 from "../../assets/image/customer1.jpg";
-import Customer2 from "../../assets/image/customer2.jpg";
-import Customer3 from "../../assets/image/customer3.jpg";
+import Customer1 from "../../assets/image/customers/customer1.jpg";
+import Customer2 from "../../assets/image/customers/customer2.jpg";
+import Customer3 from "../../assets/image/customers/customer3.jpg";
 import Chat from "../chat/Chat";
 
 function Review() {
