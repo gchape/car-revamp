@@ -1,16 +1,17 @@
 import { useState } from "react";
 
 const Contact = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   return (
     <div className="flex flex-col grow-1 md:flex-row justify-center items-center gap-12 lg:gap-24 px-1.5 py-12 pb-5">
-      {isLoading && <span className="loading loading-dots loading-xl" />}
+      {isLoading && (
+        <div className="skeleton w-full md:w-1/2 h-130 rounded-xl shadow-lg overflow-hidden relative bg-black" />
+      )}
 
       <iframe
-        className="w-full md:w-1/2 h-130 rounded-xl shadow-lg overflow-hidden relative"
-        style={{ border: "none" }}
-        loading="lazy"
+        className="w-full md:w-1/2 h-130 rounded-xl shadow-lg overflow-hidden relative grayscale-25"
+        loading="eager"
         allowFullScreen
         onLoad={() => setIsLoading(false)}
         src={`https://www.google.com/maps/embed/v1/place?key=${

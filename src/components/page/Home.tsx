@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from "react-router";
 import LiveChat from "../../features/LiveChat";
 import Navbar from "../../features/Navbar";
-import Footer from "../Footer";
+import Footer from "../footer/Footer";
 import Main from "../Main";
 
 function Home() {

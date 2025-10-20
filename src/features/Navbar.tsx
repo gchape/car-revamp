@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { NavLink } from "react-router";
-import Socials from "../components/Socials";
+import Socials from "../components/chat/Socials";
 import { menuItems } from "../ts/data";
 
 function Navbar() {

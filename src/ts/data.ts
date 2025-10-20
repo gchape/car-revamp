@@ -1,6 +1,6 @@
-import Service1Src from "../assets/service/1.jpg";
-import Service2Src from "../assets/service/2.jpg";
-import Service3Src from "../assets/service/3.jpg";
+import Service1Src from "../assets/image/services/1.jpg";
+import Service2Src from "../assets/image/services/2.jpg";
+import Service3Src from "../assets/image/services/3.jpg";
 
 const menuItems = [
   { title: "ჩვენს შესახებ", path: "/about" },
