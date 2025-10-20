@@ -48,8 +48,9 @@ const Main = () => {
               }}
             >
               <img
-                src={service.src}
+                src={service.srcSmall}
                 alt={service.title}
+                fetchPriority="high"
                 className="w-full h-40 object-cover opacity-80 rounded-2xl"
               />
               <div className="p-4 font-arial-geo">

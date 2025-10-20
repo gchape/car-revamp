@@ -1,6 +1,9 @@
 import Service1Src from "../assets/image/services/1.jpg";
 import Service2Src from "../assets/image/services/2.jpg";
 import Service3Src from "../assets/image/services/3.jpg";
+import Service1SrcSmall from "../assets/image/services/300x250/1.png";
+import Service2SrcSmall from "../assets/image/services/300x250/2.png";
+import Service3SrcSmall from "../assets/image/services/300x250/3.png";
 
 const menuItems = [
   { title: "ჩვენს შესახებ", path: "/about" },
@@ -15,6 +18,7 @@ const services: Service[] = [
   {
     title: "დეტალური წმენდა",
     src: Service1Src,
+    srcSmall: Service1SrcSmall,
     description: [
       "ავტომობილის სიღრმისეული გარე და შიგა წმენდა, რაც მას ახალ სახეს ანიჭებს.",
       "ჩვენ ვიყენებთ სპეციალურად შერჩეულ ქიმიურ საშუალებებს, რომლებიც უსაფრთხოდ და ეფექტურად წმენდება, არ აზიანებს მასალებს.",
@@ -35,6 +39,7 @@ const services: Service[] = [
   {
     title: "დიაგნოსტიკა",
     src: Service2Src,
+    srcSmall: Service2SrcSmall,
     description: [
       "დიაგნოსტიკა, რომელიც მოგაწვდით ინფორმაციას თქვენი ავტომობილის ზოგადი მდგომარეობის შესახებ.",
       "ძირითადი სისტემების, როგორიცაა ძრავი, ტრანსმისია და უსაფრთხოების სისტემების შემოწმება.",
@@ -55,6 +60,7 @@ const services: Service[] = [
   {
     title: "ჭერის გადაკვრა და აღდგენა",
     src: Service3Src,
+    srcSmall: Service3SrcSmall,
     description: [
       "დაზიანებული ჭერის აღდგენა — რომ თქვენი ავტომობილის ინტერიერი იყოს კვლავ როგორც ახალი.",
       "მაღალი ხარისხის ნაჭრის ან ტყავის გამოყენებით.",

@@ -4,6 +4,7 @@ declare global {
   type Service = {
     title: string;
     src: string;
+    srcSmall: string;
     description: string[];
     prices: {
       car: "სედანი" | "ჯიპი";
