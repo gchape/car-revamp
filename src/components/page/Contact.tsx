@@ -28,7 +28,7 @@ const Contact = () => {
 
       <div className="flex flex-col justify-center items-center text-stone-300 w-full md:w-1/2 mt-4 md:m-0">
         <section className="mb-6 md:mb-12">
-          <h2 className="text-yellow-400 text-2xl md:text-4xl tracking-widest md:tracking-wider font-bold font-arial-geo">
+          <h2 className="text-yellow-400 text-2xl md:text-4xl tracking-wider md:tracking-wider font-bold font-arial-geo">
             საკონტაქტო ინფორმაცია
           </h2>
         </section>

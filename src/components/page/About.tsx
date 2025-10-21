@@ -9,8 +9,8 @@ const fadeInUp: Variants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.15,
-      duration: 0.45,
+      delay: i * 0.1,
+      duration: 0.4,
       ease: "easeOut",
     },
   }),
@@ -35,7 +35,7 @@ function About() {
           {aboutCompany.map((line, index) => (
             <motion.p
               key={index}
-              className="text-neutral-400 text-lg md:text-xl tracking-wide pb-5 lg:pb-10"
+              className="text-stone-400 text-lg md:text-xl tracking-wide pb-5 lg:pb-10"
               custom={index}
               variants={fadeInUp}
               initial="hidden"

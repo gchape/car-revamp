@@ -64,7 +64,7 @@ const Rating = () => (
         aria-label="5 star"
       />
     </div>
-    <span className="text-sm font-nunito font-bold">4.5 შეფასება</span>
+    <span className="text-sm font-bold">4.5 შეფასება</span>
   </div>
 );
 
